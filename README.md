@@ -1,4 +1,4 @@
-# Yice ![logo](img/logo1.png)
+# <img src="img/logo.svg" alt="Yice"  style="height:60px" /> Yice
 
 Yice（易测）Easy to evaluate for college student .
 
@@ -6,4 +6,4 @@ Yice（易测）Easy to evaluate for college student .
 
 ### TODO
 
-- [ ] 预测算法
+- [x] 预测算法
