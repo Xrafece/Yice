@@ -1,4 +1,4 @@
-# <img src="img/logo.svg" alt="Yice"  style="zoom: 50%;" />
+# <img src="img/logo.svg" alt="Yice" height="60">
 
 Yice（易测）Easy to evaluate for college student .
 
