@@ -11,6 +11,7 @@
 	<modules>
 		<module>yice-common</module>
 		<module>yice-admin</module>
+		<module>yice-test</module>
 	</modules>
 
 	<properties>

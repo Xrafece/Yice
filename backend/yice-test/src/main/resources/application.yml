@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: yice-name
+  datasource:
+    url: jdbc:mysql:///yice?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+mybatis:
+  mapper-locations: classpath*:mapper/*.xml
+  type-aliases-package: com.xrafece.yice.entity
