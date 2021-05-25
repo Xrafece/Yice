@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.xrafece.yice</groupId>
+	<artifactId>yice-all</artifactId>
+	<packaging>pom</packaging>
+	<version>1.0.0-SNAPSHOT</version>
+	<modules>
+		<module>yice-common</module>
+		<module>yice-admin</module>
+	</modules>
+
+	<properties>
+		<java.version>1.8</java.version>
+		<!--<resource.delimiter>@</resource.delimiter>-->
+		<maven.compiler.source>${java.version}</maven.compiler.source>
+		<maven.compiler.target>${java.version}</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<!--spring boot 2.2.2-->
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-dependencies</artifactId>
+				<version>2.2.2.RELEASE</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<!--spring cloud Hoxton.SR1-->
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>Hoxton.SR1</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<!--Spring cloud alibaba 2.1.0.RELEASE-->
+			<dependency>
+				<groupId>com.alibaba.cloud</groupId>
+				<artifactId>spring-cloud-alibaba-dependencies</artifactId>
+				<version>2.1.0.RELEASE</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		<!--	&lt;!&ndash;mysql&ndash;&gt;-->
+		<!--	<dependency>-->
+		<!--		<groupId>mysql</groupId>-->
+		<!--		<artifactId>mysql-connector-java</artifactId>-->
+		<!--		<version>${mysql.version}</version>-->
+		<!--		<scope>runtime</scope>-->
+		<!--	</dependency>-->
+		<!--	&lt;!&ndash;junit&ndash;&gt;-->
+		<!--	<dependency>-->
+		<!--		<groupId>junit</groupId>-->
+		<!--		<artifactId>junit</artifactId>-->
+		<!--		<version>${junit.version}</version>-->
+		<!--	</dependency>-->
+			<!-- druid-->
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>druid</artifactId>
+				<version>1.2.6</version>
+			</dependency>
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>druid-spring-boot-starter</artifactId>
+				<version>1.2.6</version>
+			</dependency>
+			<!--mybatis-->
+			<dependency>
+				<groupId>org.mybatis.spring.boot</groupId>
+				<artifactId>mybatis-spring-boot-starter</artifactId>
+				<version>2.1.4</version>
+			</dependency>
+			<!--tk.mapper-->
+			<dependency>
+				<groupId>tk.mybatis</groupId>
+				<artifactId>mapper</artifactId>
+				<version>4.1.5</version>
+			</dependency>
+			<!--log4j-->
+			<dependency>
+				<groupId>log4j</groupId>
+				<artifactId>log4j</artifactId>
+				<version>1.2.17</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+</project>

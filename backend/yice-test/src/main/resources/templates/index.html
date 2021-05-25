@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="../static/login.css" th:href="@{/login.css}">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<form class="login" action="/login">
+    <img src="../static/logo.svg" th:src="@{/logo.svg}">
+    <input type="text" placeholder="用户名" name="username">
+    <input type="password" placeholder="密码" name="password">
+    <button>登陆</button>
+</form>
+<!-- partial -->
+
+</body>
+</html>
